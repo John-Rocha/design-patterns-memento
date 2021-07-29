@@ -2,7 +2,7 @@ import { ConcreteMemento } from './ConcreteMemento';
 import { IMemento } from './IMemento';
 
 // Originator
-export class ImageEditor {
+export class Originator {
   constructor(private filePath: string, private fileFormat: string) {}
 
   convertFormatTo(format: string): void {

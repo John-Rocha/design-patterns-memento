@@ -1,10 +1,10 @@
-import { ImageEditor } from './ImageEditor';
+import { Originator } from './Originator';
 import { IMemento } from './IMemento';
 
 // Caretaker
-export class ImageEditorBackupManager {
+export class Caretaker {
   private mementos: IMemento[] = [];
-  constructor(private readonly imageEditor: ImageEditor) {}
+  constructor(private readonly imageEditor: Originator) {}
 
   backup(): void {
     console.log(`Backup: salvado o estado de ImageEditor`);
